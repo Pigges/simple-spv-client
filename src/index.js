@@ -19,7 +19,7 @@ async function main() {
 
     const method = cmd[0];
 
-    const params = cmd.length > 1 ? cmd.shift() && cmd : "";
+    const params = cmd.length > 1 ? cmd.shift() && cmd : [];
 
     const client = new Client(false);
     await client.connect([server[0], parseInt(server[1])]);

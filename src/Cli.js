@@ -74,9 +74,9 @@ export default class Cli {
       cmd = (await input("Send command: ")).split(' ');
       const method = cmd[0];
 
-      const params = cmd.length > 1 ? cmd.shift() && cmd : "";
+      const params = cmd.length > 1 ? cmd.shift() && cmd : [];
 
-      console.log(await this.client.sendRequest(method, params || []));
+      console.log(await this.client.sendRequest(method, params));
     }
   }
 
