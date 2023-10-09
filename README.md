@@ -2,6 +2,8 @@
 
 A simple SPV client that aims for easy integration primarily with LBRY Hub servers.
 
+> The client isn't perfect. It can and will break if your input isn't correct.
+
 To see what methods that the SPV will answer on, check [this website](https://electrumx.readthedocs.io/en/latest/protocol-methods.html).
 This client doesn't try to decode the data recieved, rather it gives you the raw JSONRPC that the SPV replied with.
 
@@ -52,4 +54,5 @@ You can build the project to get an executable:
 bun run build
 ```
 
-
+## License
+This project is MIT licensed. For the full license, see [LICENSE](LICENSE).
