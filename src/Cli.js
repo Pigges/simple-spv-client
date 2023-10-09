@@ -76,7 +76,7 @@ export default class Cli {
 
       const params = cmd.length > 1 ? cmd.shift() && cmd : "";
 
-      console.log(await this.client.sendRequest(method, params));
+      console.log(await this.client.sendRequest(method, params || []));
     }
   }
 
