@@ -1,0 +1,20 @@
+{
+  "name": "simple-spv-client",
+  "module": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.js",
+    "dev": "bun --watch run src/index.js",
+    "build": "bun build src/index.js --compile --outfile a.out"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "protobufjs": "^7.2.5"
+  }
+}
